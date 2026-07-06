@@ -414,7 +414,7 @@ ul{list-style:none;}
             <li>✅ Earn &amp; redeem coins</li>
             <li>✅ Progress tracking</li>
           </ul>
-          <button onclick="selectTier('silver')" style="width:100%;padding:14px;background:linear-gradient(135deg,#64748b,#475569);color:white;border:none;border-radius:14px;font-family:'Nunito',sans-serif;font-weight:700;font-size:1rem;cursor:pointer;">Choose Silver — R50/mo</button>
+          <button onclick="selectTier('silver')" style="width:100%;padding:14px;background:linear-gradient(135deg,#64748b,#475569);color:white;border:none;border-radius:14px;font-family:'Nunito',sans-serif;font-weight:700;font-size:1rem;cursor:pointer;">Choose Silver — R20/mo</button>
         </div>
 
         <!-- Tier 3: Gold -->
@@ -422,7 +422,7 @@ ul{list-style:none;}
           <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#f59e0b;color:white;font-family:'Nunito',sans-serif;font-weight:800;font-size:0.72rem;letter-spacing:1px;padding:4px 16px;border-radius:100px;">BEST VALUE</div>
           <div style="font-size:2.5rem;margin-bottom:0.5rem;">🥇</div>
           <div style="font-family:'Nunito',sans-serif;font-weight:800;font-size:1.2rem;color:#1a3a5c;margin-bottom:0.3rem;">Gold</div>
-          <div style="font-family:'Nunito',sans-serif;font-weight:900;font-size:2.2rem;color:#92400e;margin-bottom:0.3rem;">R50<span style="font-size:1rem;font-weight:600;">/mo</span></div>
+          <div style="font-family:'Nunito',sans-serif;font-weight:900;font-size:2.2rem;color:#92400e;margin-bottom:0.3rem;">R20<span style="font-size:1rem;font-weight:600;">/mo</span></div>
           <div style="font-size:0.82rem;color:#6b7280;margin-bottom:1.2rem;">Tier 3</div>
           <ul style="list-style:none;text-align:left;margin-bottom:1.5rem;font-size:0.88rem;color:#1a3a5c;display:flex;flex-direction:column;gap:8px;">
             <li>✅ Everything in Silver</li>
@@ -602,7 +602,7 @@ async function handleLogin(e) {
 }
 
 function selectTier(tier) {
-  const labels = { freebie: 'Freebie (Free)', silver: 'Silver (R50/mo)', gold: 'Gold (R100/mo)' };
+  const labels = { freebie: 'Freebie (Free)', silver: 'Silver (R20/mo)', gold: 'Gold (R50/mo)' };
   alert('You selected the ' + labels[tier] + ' plan! Sign-up coming soon.');
 }
 const sections = document.querySelectorAll('section[id]');
