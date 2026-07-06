@@ -497,6 +497,7 @@ async function apiCall(method, path, body = null) {
     headers: { 'Content-Type': 'application/json' },
   };
   if (token) opts.headers['Authorization'] = `Bearer ${token}`;
+  console.log("Token:", token);
   if (body) opts.body = JSON.stringify(body);
   const res = await fetch(API + path, opts);
   const data = await res.json();
